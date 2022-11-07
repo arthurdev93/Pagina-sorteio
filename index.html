@@ -8,5 +8,21 @@
 </head>
 <body>
     
+    <h1 id="d"></h1>
+    <button onclick="sortear()"> Sortear </button>
+
+    <script>
+        //para sortear NOMES, em coments abaixo:
+        // let pessoas = ["Igor", "João", "Marcos"]
+        function sortear () {
+            let np = 100; //let np = pessoas.length
+
+            let ns = Math.round(Math.random() * np); //só muda "Math.round" >para> "Math.floor". Isso resolve contagem a partir de [0]
+
+            document.getElementById("d").innerHTML = ns; //muda final para: innerHTML = pessoas[ns]
+        }
+
+    </script>
+
 </body>
 </html>
